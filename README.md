@@ -31,3 +31,29 @@ export class HttpExceptionFilter implements ExceptionFilter {
 }
 ```
 ---
+
+
+
+### Create controller
+```bash
+nest g controller exception
+```
+<img width="302" height="71" alt="image" src="https://github.com/user-attachments/assets/2b476713-f797-4bc7-a2b8-9b093a40219e" />
+
+### `exception.controller.ts`
+```bash
+import { Controller, Get, Param, ParseIntPipe, UseFilters } from '@nestjs/common';
+import { HttpExceptionFilter } from 'src/filters/http-exception/http-exception.filter';
+
+@Controller('exception')
+@UseFilters(HttpExceptionFilter)
+export class ExceptionController {
+    @Get('hello/:id')
+    getHello(@Param('id', ParseIntPipe) id: number) {
+        return {message: `Your ID is ${id}`}
+    }
+}
+```
+---
+
+
