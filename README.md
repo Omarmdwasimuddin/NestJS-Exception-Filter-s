@@ -57,7 +57,7 @@ export class ExceptionController {
 ---
 
 
-> ## Note: id must be number dite hobe
+> Note: id must be number dite hobe
 >
 > <img width="400" height="186" alt="image" src="https://github.com/user-attachments/assets/7ef3c8c4-05b3-47c5-9380-8e5527b7bfb6" />
 >
