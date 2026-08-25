@@ -4,7 +4,6 @@
 ```bash
 nest g filter filters/http-exception
 ```
----
 
 <img width="318" height="67" alt="image" src="https://github.com/user-attachments/assets/5c31cf7e-fd26-4724-858a-96927bf6f0de" />
 
